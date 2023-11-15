@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERRY CHRISTMAS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100vw;
+            height: 100vh;
+            background: #360606;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            width: 460px;
+            height: 537px;
+            position: relative;
+
+        }
+
+        .a1 {
+            color: #FFF;
+            text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.60);
+            font-family: Inter;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: absolute;
+            left: 125px;
+            top: 70px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translatey(0);
+            }
+
+            40% {
+                transform: translatey(-20px);
+            }
+
+            60% {
+                transform: translatey(-10px);
+            }
+        }
+
+        .a2 {
+            color: #FFF;
+            text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.60);
+            font-family: Inter;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: absolute;
+            left: 65px;
+            bottom: 70px;
+            animation: bounce2 2s infinite;
+        }
+
+        @keyframes bounce2 {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translatex(0);
+            }
+
+            40% {
+                transform: translatey(20px);
+            }
+
+            60% {
+                transform: translatey(10px);
+            }
+
+        }
+
+
+        /* 인형 */
+        .a3 img {
+            width: 217px;
+            height: 217px;
+            position: absolute;
+            z-index: 3;
+            left: 112px;
+            top: 160px;
+        }
+
+        /* 나무 */
+        .a4 img {
+            width: 94px;
+            height: 95px;
+            position: absolute;
+            z-index: 3;
+            left: 35px;
+            top: 165px;
+
+        }
+
+        .a4:hover img {
+            width: 98px;
+            height: 99px;
+            position: absolute;
+            z-index: 3;
+            left: 33px;
+            top: 163px;
+
+        }
+
+        /* 선물 */
+        .a5 img {
+            width: 75px;
+            height: 74px;
+            position: absolute;
+            z-index: 3;
+            left: 45px;
+            top: 300px;
+        }
+
+        .a5:hover img {
+            width: 79px;
+            height: 79px;
+            position: absolute;
+            z-index: 3;
+            left: 43px;
+            top: 298px;
+        }
+
+        /* 눈 */
+        .a6 img {
+            width: 443px;
+            height: 443px;
+            position: absolute;
+            top: 50px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div>
+            <p class="a1">MERRY</p>
+            <p class="a2">CHRISTMAS</p>
+            <p class="a3"><img src="./image/doll.png" alt="인형"></p>
+            <p class="a4"><a
+                    href="https://www.instagram.com/explore/tags/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%8A%B8%EB%A6%AC/"
+                    target="_blank"><img src="./image/tree.png" alt="나무"></a></p>
+            <p class="a5"><a
+                    href="https://www.instagram.com/explore/tags/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%EC%84%A0%EB%AC%BC/"
+                    target="_blank"><img src="./image/present.png" alt="선물"></a></p>
+            <p class="a6"><img src="./image/snow.png" alt="눈"></p>
+        </div>
+    </div>
+</body>
+
+</html>
